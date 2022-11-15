@@ -8,6 +8,7 @@ import {MatDialogModule} from '@angular/material/dialog';
 import {MatButtonModule} from '@angular/material/button';
 import { FileUploadComponent } from './components/file-upload/file-upload.component';
 import { TableDataComponent } from './components/table-data/table-data.component';
+import { AppRoutingModule } from './app-routing.module';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { TableDataComponent } from './components/table-data/table-data.component
     BrowserAnimationsModule,
     MatTableModule,
     MatDialogModule,
-    MatButtonModule
+    MatButtonModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
