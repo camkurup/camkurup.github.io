@@ -9,13 +9,17 @@ import {MatButtonModule} from '@angular/material/button';
 import { FileUploadComponent } from './components/file-upload/file-upload.component';
 import { TableDataComponent } from './components/table-data/table-data.component';
 import { AppRoutingModule } from './app-routing.module';
+import { DialogComponent } from './components/dialog/dialog.component';
+import { DialogOverviewComponent } from './components/dialog-overview/dialog-overview.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     FileUploadComponent,
-    TableDataComponent
+    TableDataComponent,
+    DialogComponent,
+    DialogOverviewComponent
   ],
   imports: [
     BrowserModule,
@@ -26,6 +30,7 @@ import { AppRoutingModule } from './app-routing.module';
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [DialogComponent]
 })
 export class AppModule { }

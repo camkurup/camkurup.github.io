@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
+
 import { TableDataComponent } from './components/table-data/table-data.component'; 
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  {path: 'TableDataComponent', component:TableDataComponent}
+  {path: '', component:TableDataComponent}
 ];
 
 @NgModule({
